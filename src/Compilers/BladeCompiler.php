@@ -17,6 +17,11 @@ class BladeCompiler extends \Illuminate\View\Compilers\BladeCompiler
      */
     protected $contentTagsEscaped = true;
 
+    private function compileEchoDefaults($match)
+    {
+        return $match;
+    }
+
     /**
      * Compile the "regular" echo statements.
      *
